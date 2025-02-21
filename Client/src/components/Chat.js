@@ -27,7 +27,7 @@ function Chat() {
         setInput("")
         setisTyping(true)
         try{
-            const respone = await fetch("http://127.0.0.1:5000/chat",{
+            const respone = await fetch(`${import.meta.env.BACKEND_URL}/chat`,{
                 method:"POST",
                 headers:{
                     "Content-Type":"application/json",
