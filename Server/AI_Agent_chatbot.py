@@ -1,4 +1,4 @@
-# import libraries
+m# import libraries
 
 import langchain
 import pinecone
@@ -21,7 +21,7 @@ model = SentenceTransformer("all-MiniLM-L6-v2")
 
 ## Embedding Technique of Micorfsoft
 
-pc = Pinecone(api_key="API_Key")
+pc = Pinecone(api_key="Pinecone_API_Key")
 index = pc.Index("index-ai-agent")
 
 
@@ -41,7 +41,7 @@ def chatbot(user_input):
     single_string = " ".join(retrieved_docs)
     print({single_string})
 
-    client = genai.Client(api_key="AIzaSyDWuj5zQ7hBNeaiL5jhrmuqmzhRHzTdqW0")
+    client = genai.Client(api_key="Gemini_API_Key")
 
     response = client.models.generate_content(
         model="gemini-2.0-flash",
