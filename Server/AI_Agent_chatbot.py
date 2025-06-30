@@ -21,7 +21,7 @@ model = SentenceTransformer("all-MiniLM-L6-v2")
 
 ## Embedding Technique of Micorfsoft
 
-pc = Pinecone(api_key="pcsk_3xJzQm_GgVD7g3zsF2pGPrwuf3w98v1Y83Usq2aRymptF9w8zxJDJg7nU1LMZcg7azi3ER")
+pc = Pinecone(api_key="API_Key")
 index = pc.Index("index-ai-agent")
 
 
